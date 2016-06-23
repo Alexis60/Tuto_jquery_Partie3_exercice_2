@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jquery_partie3_exo1</title>
+  <link rel="stylesheet" href="assets/jquery-ui-1.11.4.custom/jquery-ui.min.css" media="screen" title="no title" charset="utf-8">
+  <script src="assets/jquery-1.12.4.js"></script>
+  <script src="assets/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+</head>
+<body>
+  <input type="text" name="Champs_texte" id="Champs_texte" value="0" />
+  <input type="Button" id='Compteur_plus' value="+" />
+  <input type="Button" id='Compteur_moins' value="-" />
+  <script>
+  $(document).ready(function(){
+    $('#Compteur_plus').click( function() {
+      var counter = $('#Champs_texte').val();
+      counter++ ;
+      $('#Champs_texte').val(counter);
+    });
+  });
+  $(document).ready(function(){
+    $('#Compteur_moins').click( function() {
+      var counter = $('#Champs_texte').val();
+      counter-- ;
+      $('#Champs_texte').val(counter);
+    });
+  });
+  </script>
+</body>
+</html>
